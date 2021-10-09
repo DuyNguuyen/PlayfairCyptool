@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:padding="@dimen/margin_basex3"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="@string/playfair_encryption_decryption_tools"
+        android:textSize="@dimen/text_medium" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="@dimen/margin_basex3"
+        android:paddingStart="@dimen/margin_basex3"
+        android:paddingEnd="@dimen/margin_basex3"
+        android:paddingBottom="@dimen/margin_base">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="start"
+            android:padding="@dimen/margin_basex3"
+            android:text="@string/select_method"
+            android:textSize="@dimen/text_small" />
+
+        <Spinner
+            android:id="@+id/method_spinner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/margin_base"
+            android:scrollbarSize="15sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingStart="@dimen/margin_basex3"
+        android:paddingTop="@dimen/margin_base"
+        android:paddingEnd="@dimen/margin_basex3"
+        android:paddingBottom="@dimen/margin_base">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/margin_base"
+            android:paddingBottom="@dimen/margin_base"
+            android:paddingStart="@dimen/margin_basex3"
+            android:paddingEnd="@dimen/margin_basex3"
+            android:text="@string/key_6_character_minimum"
+            android:textSize="@dimen/text_small" />
+
+        <EditText
+            android:id="@+id/key_edt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingStart="@dimen/margin_basex3"
+            android:paddingEnd="@dimen/margin_base"
+            android:paddingTop="@dimen/margin_base"
+            android:paddingBottom="@dimen/margin_basex3"
+            android:textSize="@dimen/text_medium"
+            android:inputType="textCapCharacters"
+            android:digits=" ABCDEFGHIJKLMNOPQRSTUVWXYZ" />
+
+<!--        <TextView-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="@string/key_matrix"-->
+<!--            android:textSize="@dimen/text_small"-->
+<!--            android:paddingTop="@dimen/margin_base"-->
+<!--            android:paddingStart="@dimen/margin_basex3"-->
+<!--            android:paddingEnd="@dimen/margin_basex3"-->
+<!--            android:paddingBottom="@dimen/margin_base"/>-->
+<!--        -->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/input_text"
+            android:textSize="@dimen/text_small"
+            android:paddingTop="@dimen/margin_base"
+            android:paddingStart="@dimen/margin_basex3"
+            android:paddingEnd="@dimen/margin_basex3"
+            android:paddingBottom="@dimen/margin_base"/>
+
+        <EditText
+            android:id="@+id/input_edt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingStart="@dimen/margin_basex3"
+            android:paddingEnd="@dimen/margin_base"
+            android:paddingTop="@dimen/margin_base"
+            android:paddingBottom="@dimen/margin_basex3"
+            android:textSize="@dimen/text_medium"
+            android:inputType="textCapCharacters"
+            android:minLines="3"
+            android:digits=" ABCDEFGHIJKLMNOPQRSTUVWXYZ" />
+
+        <Button
+            android:id="@+id/start_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Start"
+            android:textSize="@dimen/text_medium"
+            android:textAlignment="center"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/output_text"
+            android:textSize="@dimen/text_small"
+            android:paddingTop="@dimen/margin_basex3"
+            android:paddingStart="@dimen/margin_basex3"
+            android:paddingEnd="@dimen/margin_basex3"
+            android:paddingBottom="@dimen/margin_base"/>
+
+        <TextView
+            android:id="@+id/output_textview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingStart="@dimen/margin_basex3"
+            android:paddingEnd="@dimen/margin_base"
+            android:paddingTop="@dimen/margin_base"
+            android:paddingBottom="@dimen/margin_basex3"
+            android:textSize="@dimen/text_medium"
+            android:minLines="3" />
+
+    </LinearLayout>
+</LinearLayout>

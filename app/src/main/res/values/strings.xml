@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">PlayfairCryptool</string>
+    <string name="select_method">Select Method:</string>
+    <string name="playfair_encryption_decryption_tools">PLAYFAIR ENCRYPTION/DECRYPTION TOOLS</string>
+    <string name="key_6_character_minimum">Key: </string>
+    <string name="input_text">Input Text:</string>
+    <string name="output_text">Output Text:</string>
+    <string name="key_matrix">Key Matrix:</string>
+    <string-array name="method_array">
+        <item>Encryption</item>
+        <item>Decryption</item>
+    </string-array>
+</resources>
